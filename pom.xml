@@ -15,6 +15,7 @@
     </properties>
 
     <dependencies>
+        <!-- region PDF文件签章 -->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
@@ -26,12 +27,68 @@
             <artifactId>itext-asian</artifactId>
             <version>5.2.0</version>
         </dependency>
+        <!-- endregion -->
 
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-core</artifactId>
             <version>5.8.24</version>
         </dependency>
+
+        <!-- POI -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version> <!-- 请确保使用最新版本 -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- aspos -->
+        <!--aspose-words依赖 word转为pdf，直接依赖本地项目中的jar-->
+<!--        <dependency>-->
+<!--            <groupId>com.aspose</groupId>-->
+<!--            <artifactId>aspose-words</artifactId>-->
+<!--            <version>aspose-words-24.8-jdk16.jar</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/aspose-words-24.8-jdk16.jar</systemPath>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>aspose-words-cracked-20.4-jdk16.jar</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/aspose-words-cracked-20.4-jdk16.jar</systemPath>
+        </dependency>
+
+        <!-- documents4j word和excel转换pdf -->
+        <dependency>
+            <groupId>com.documents4j</groupId>
+            <artifactId>documents4j-local</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.documents4j</groupId>
+            <artifactId>documents4j-transformer-msoffice-word</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.documents4j</groupId>
+            <artifactId>documents4j-transformer-msoffice-excel</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+        <!-- endregion -->
+
     </dependencies>
 
 </project>
